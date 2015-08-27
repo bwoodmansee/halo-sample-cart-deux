@@ -58,7 +58,7 @@ class FeatureContext extends BehatContext
      */
     public function iAddProductWithQuantityToTheCart($productId, $quantity)
     {
-       $this->cart->addItem($this->products[$productId], $quantity);
+        throw new PendingException();
     }
 
     /**
@@ -81,7 +81,7 @@ class FeatureContext extends BehatContext
      */
     public function iTryToUpdateTheQuantityInCartForProductToBeQuantity($productId, $quantity)
     {
-        $this->cart->updateItem($this->products[$productId], $quantity);
+        throw new PendingException();
     }
 
     /**
